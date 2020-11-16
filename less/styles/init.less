@@ -1,49 +1,71 @@
 //main:../styles.less
 
-ul,ol,li,dt,dd,dl,
-h1,h2,h3,h4,h5,h6,
+ul,
+ol,
+li,
+dt,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
-body { margin:0;padding:0; }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,Verdana,Arial,'Microsoft Yahei',sans-serif;
+  font-family: "Spoqa Han Sans", "Source Sans Pro", Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, 'Microsoft Yahei', sans-serif;
   color: #333;
 }
+
 a {
   color: #333;
+
   &:hover {
     color: #111;
     text-decoration: none;
   }
 }
+
 code {
-  font-family: Monaco,'Microsoft Yahei',monospace,sans-serif;
+  font-family: Monaco, 'Microsoft Yahei', monospace, sans-serif;
 }
 
 .logo {
   font-size: 60px;
   font-weight: normal;
 }
+
 .header {
   padding: 10% 0 0;
   margin-bottom: 60px;
   text-align: right;
   position: relative;
+
   @media (min-width:768px) {
     text-align: left;
   }
+
   .menu {
     margin: 0 -10px;
     text-transform: uppercase;
+
     li {
       display: block;
       margin: 0 15px 5px;
+
       @media (min-width:768px) {
         display: inline;
         margin: 0 10px;
       }
     }
   }
+
   &::after {
     content:'{';
     display: block;
@@ -53,9 +75,10 @@ code {
     font-size: 120px;
     color: #eee;
   }
+
   @media(min-width: 768px) {
     &::after {
-      content:'}';
+      content: '}';
       left: auto;
       right: 0;
     }
@@ -68,19 +91,24 @@ code {
   padding: 0;
   font-size: 18px;
   line-height: 1.5;
+
   li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   h2 {
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 10px;
+    text-transform: uppercase;
   }
+
   p {
     color: #666;
   }
+
   h6 {
     font-size: 14px;
     text-transform: uppercase;
@@ -89,32 +117,39 @@ code {
     line-height: 1.2;
   }
 }
+
 .content-list {
   margin: 0 -15px;
+
   li {
     display: block;
     margin: 0 0 1em;
   }
+
   a {
     display: block;
     padding: 30px 15px;
     border-radius: 15px;
     background: #fff;
+
     &:hover {
       text-decoration: none;
       background: #f1f1f1;
     }
   }
 }
+
 .footer {
   text-align: center;
   font-size: 12px;
   border-top: 1px solid #eee;
   padding: 30px 0;
   margin-top: 60px;
+
   .list {
     font-size: 14px;
     margin: 0 -10px 5px;
+
     li {
       display: inline;
       margin: 0 10px;
@@ -127,6 +162,7 @@ code {
   font-size: 18px;
   line-height: 1.7;
   color: #555;
+
   &:after {
     content: '';
     display: block;
@@ -136,13 +172,20 @@ code {
     border-radius: 5px;
     margin: 45px auto 0;
   }
-  h1,h2,h3,h4,h5 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     color: #333;
   }
+
   h1 {
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 2em;
+
     &::after {
       content: '';
       display: block;
@@ -153,12 +196,14 @@ code {
       margin-top: 5px;
     }
   }
+
   h2 {
     font-size: 24px;
     line-height: 2;
     margin-bottom: 2em;
     border-bottom: 1px solid #eee;
   }
+
   code {
     display: inline-block;
     padding: 0 0.5em;
@@ -168,49 +213,60 @@ code {
     vertical-align: middle;
     margin: 0 4px;
   }
+
   p {
     margin-bottom: 1.5em;
   }
+
   ul {
-    padding: 1em ;
+    padding: 1em;
     margin: 0 0 1.5em;
+
     li {
       margin-bottom: 0.5em;
       padding-bottom: 0.5em;
       border-bottom: 1px dashed #ddd;
     }
   }
+
   a {
     border-bottom: 1px solid #333;
   }
+
   blockquote {
     background: #f6f7f8;
     margin: 0 0 1.5em;
     padding: 1em 2em;
     position: relative;
     font-size: 16px;
+
     &::before {
-      content:'“';
+      content: '“';
       position: absolute;
       left: 10px;
       top: 10px;
     }
+
     &::after {
       content: '”';
       position: absolute;
       right: 10px;
       bottom: -10px;
     }
-    &::before,&::after {
+
+    &::before,
+    &::after {
       font-size: 36px;
       line-height: 1;
       color: #ddd;
-      font-family: verdana,sans-serif;
+      font-family: verdana, sans-serif;
     }
+
     :last-child {
       margin-bottom: 0;
     }
   }
+
   img {
     max-width: 100%;
   }
