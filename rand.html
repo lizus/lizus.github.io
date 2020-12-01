@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js oldie" lang="zh-CN"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="zh-CN"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="zh-CN" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Rand Numbers</title>
+<meta content="Rand Numbers" name="description" />
+<meta content="Rand Numbers" name="Keywords" />
+<style>body{font-size: 20px;letter-spacing: 0.05em;text-align: center;}</style>
+</head>
+<body>
+<script>
+    var num=location.hash;
+    num=(num.length>1) ? num.substr(1) : 20;
+    var time=Math.ceil(num/16);
+    var total='';
+    for(var i=0;i<time;i++) {
+        total+=(Math.random()+'').substr(2);
+    }
+    var val=total.substr(0,num);
+    document.write(val);
+
+</script>
+</body>
+</html>
